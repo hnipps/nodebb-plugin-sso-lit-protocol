@@ -1,8 +1,8 @@
-# Web3 SSO for NodeBB forums
+# Lit Protocol for NodeBB forums
 
 Allows you to authenticate with NodeBB forums using your crypto wallet via Web3 clients.
 
-Use a browser that supports Web3 out of the box such as [Opera Browser](https://www.opera.com/crypto), [Brave](https://brave.com/) or similar ([Add your Web3 browser / browser plugin here!](https://github.com/psychobunny/nodebb-plugin-sso-web3/edit/main/README.md)).
+Use a browser that supports Web3 out of the box such as [Opera Browser](https://www.opera.com/crypto), [Brave](https://brave.com/) or similar ([Add your Web3 browser / browser plugin here!](https://github.com/hnipps/nodebb-plugin-sso-lit-protocol/edit/main/README.md)).
 
 Alternatively, download a browser plugin such as [MetaMask](https://metamask.io).
 
@@ -25,7 +25,7 @@ Neither do I, but you can visit our [NodeBB forums](https://community.nodebb.org
 
 ## Is this secure?
 
-No. Because I wrote it. Please review this code as well as the [passport module](https://github.com/psychobunny/passport-dapp-web3) and read the code yourself and verify if it's gud before even thinking about deploying this to production.
+No. Because I wrote it. Please review this code as well as the [passport module](https://github.com/hnipps/passport-lit-protocol) and read the code yourself and verify if it's gud before even thinking about deploying this to production.
 
 ## Is this the best way to do this?
 

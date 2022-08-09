@@ -10,18 +10,18 @@ plugin.init = async params => {
 	const router = params.router;
 	const middleware = params.middleware;
 
-	router.get('/admin/plugins/sso/web3', middleware.admin.buildHeader, controllers.renderAdminPage);
-	router.get('/api/admin/plugins/sso/web3', controllers.renderAdminPage);
-	router.post('/deauth/web3', [middleware.requireUser, middleware.applyCSRF], controllers.deauth);
+	router.get('/admin/plugins/sso/lit-protocol', middleware.admin.buildHeader, controllers.renderAdminPage);
+	router.get('/api/admin/plugins/sso/lit-protocol', controllers.renderAdminPage);
+	router.post('/deauth/lit-protocol', [middleware.requireUser, middleware.applyCSRF], controllers.deauth);
 
 	auth.init();
 };
 
 plugin.addMenuItem = async header => {
 	header.plugins.push({
-		route: '/plugins/sso/web3',
+		route: '/plugins/sso/lit-protocol',
 		icon: 'fa-ethereum',
-		name: 'Web3 SSO',
+		name: 'Lit Protocol',
 	});
 
 	return header;
@@ -29,10 +29,10 @@ plugin.addMenuItem = async header => {
 
 plugin.filterAuthInit = async loginStrategies => {
 	loginStrategies.push({
-		name: 'web3',
-		url: '/auth/web3',
+		name: 'lit-protocol',
+		url: '/auth/lit-protocol',
 		urlMethod: 'post',
-		callbackURL: '/auth/web3/callback',
+		callbackURL: '/auth/lit-protocol/callback',
 		icon: 'fa-ethereum',
 		scope: ''
 	});
