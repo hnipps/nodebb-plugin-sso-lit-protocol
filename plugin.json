@@ -6,6 +6,7 @@
     { "hook": "static:app.load", "method": "init" },
     { "hook": "filter:auth.init", "method": "filterAuthInit" },
     { "hook": "filter:auth.list", "method": "filterAuthList" },
+    { "hook": "filter:auth.options", "method": "filterAuthOptions" },
     { "hook": "filter:admin.header.build", "method": "addMenuItem" },
     { "hook": "static:user.delete", "method": "staticUserDelete" },
     {
